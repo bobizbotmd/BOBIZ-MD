@@ -1,11 +1,11 @@
 {
-    "name": "Aquabot - MD",
-    "description": "AQUABOT  - Makes it easy and fun to use Whatsapp.",
-    "logo": "https://i.ibb.co/V9jYrQC/aqua-md.jpg",
-    "keywords": ["whatsapp", "userbot", "aqua", "bot", "ai" , "MD" ],
-    "repository": "https://github.com/sanuwaofficial/AQUABOT-MD",
-    "website":   "https://aquabot.ga/",
-    "success_url": "https://aquabot.ga",
+    "name": "BOBIZ - MD",
+    "description": "BOBIZMD  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg",
+    "keywords": ["whatsapp", "userbot", "bobiz", "bot", "ai" , "MD" ],
+    "repository": "https://github.com/bobizbotmd/BOBIZ-MD",
+    "website":   "",
+    "success_url": "",
     "stack": "container",
      "env": {
             "BOBIZ_SESSION": {
@@ -47,37 +47,37 @@
       },
      
        "SONG_DOWN": {
-            "description": "",
+            "description": "song downloading text",
             "value": "*📥Downloading your song...*" ,
             "required": true
       }, 
         "SONG_UP": {
-            "description": "",
+            "description": "song uploading text",
             "value": "*📤Uploading your song...*" ,
             "required": true
       },
           "VIDEO_DOWN": {
-            "description": "",
+            "description": "video downloading text",
             "value": "*📥Downloading your video...*" ,
             "required": true
       },
           "VIDEO_UP": {
-            "description": "",
+            "description": "video uploading text",
             "value": "*📤Uploading your video...*" ,
             "required": true
       },
           "FILE_DOWN": {
-            "description": "",
+            "description": "file downloading text",
             "value": "*📥Downloading your file...*" ,
             "required": true
       },
           "FILE_UP": {
-            "description": "",
+            "description": "file uploading text",
             "value": "*📤Uploading your file...*" ,
             "required": true
       },
           "STIC_WM": {
-            "description": "",
+            "description": "sticker watermark",
             "value": "BOBIZ-MD" ,
             "required": true
       }
