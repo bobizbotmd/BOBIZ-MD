@@ -1,0 +1,93 @@
+{
+    "name": "Aquabot - MD",
+    "description": "AQUABOT  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://i.ibb.co/V9jYrQC/aqua-md.jpg",
+    "keywords": ["whatsapp", "userbot", "aqua", "bot", "ai" , "MD" ],
+    "repository": "https://github.com/sanuwaofficial/AQUABOT-MD",
+    "website":   "https://aquabot.ga/",
+    "success_url": "https://aquabot.ga",
+    "stack": "container",
+     "env": {
+            "BOBIZ_SESSION": {
+            "description": "qr session code",
+            "required": true
+             },
+             
+           
+           "URL_1NAME": {
+            "description": "",
+            "value": "🎃Follow me on Instagram🎃" ,
+            "required": true
+      },
+           "URL_1LINK": {
+            "description": "",
+            "value": "http://instagram.com/noureddine_ouafy" ,
+            "required": true
+      },
+     "URL_2NAME": {
+            "description": "",
+            "value": "✨Star on Github✨" ,
+            "required": true
+      },
+       "URL_2LINK": {
+            "description": "",
+            "value": "https://github.com/bobizbotmd/BOBIZ-MD" ,
+            "required": true
+      },
+      
+      "ALIVE_MESSAGE": {
+            "description": "add text",
+            "value": "default", 
+            "required": true
+      },
+      "ALIVE_LOGO": {
+            "description": "add direct image url",
+            "value": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg" ,
+            "required": true
+      },
+     
+       "SONG_DOWN": {
+            "description": "",
+            "value": "*📥Downloading your song...*" ,
+            "required": true
+      }, 
+        "SONG_UP": {
+            "description": "",
+            "value": "*📤Uploading your song...*" ,
+            "required": true
+      },
+          "VIDEO_DOWN": {
+            "description": "",
+            "value": "*📥Downloading your video...*" ,
+            "required": true
+      },
+          "VIDEO_UP": {
+            "description": "",
+            "value": "*📤Uploading your video...*" ,
+            "required": true
+      },
+          "FILE_DOWN": {
+            "description": "",
+            "value": "*📥Downloading your file...*" ,
+            "required": true
+      },
+          "FILE_UP": {
+            "description": "",
+            "value": "*📤Uploading your file...*" ,
+            "required": true
+      },
+          "STIC_WM": {
+            "description": "",
+            "value": "BOBIZ-MD" ,
+            "required": true
+      }
+         
+        
+     },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
