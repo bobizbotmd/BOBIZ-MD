@@ -283,6 +283,8 @@ mek = mek.messages[0]
 	      }      
 	      break
 		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+	      
 	      case 'hdfb' : 
 		      try {
 		if (!q) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )
@@ -299,6 +301,9 @@ mek = mek.messages[0]
 			await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 		}
 		      break
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   
+		      
 		        case 'sdfb' : 
 		      try {
 		if (!q) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )
@@ -337,6 +342,9 @@ mek = mek.messages[0]
 		      await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 		      }
 		break 
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		 
+		      
 		 case 'ytmp3' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -352,7 +360,10 @@ mek = mek.messages[0]
 	      } catch(e) {
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
-	      break      
+	      break  
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 	      case 'ytmp4' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -369,6 +380,9 @@ mek = mek.messages[0]
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
 	      break 
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 		 case 'dcsong' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -387,6 +401,9 @@ mek = mek.messages[0]
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
 	      break  
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 			 case 'ausong' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -403,7 +420,11 @@ mek = mek.messages[0]
 	      } catch(e) {
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
-	      break       
+	      break   
+		      
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 		 case '720vid' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -421,6 +442,9 @@ await conn.sendMessage(from, { delete: docsongup.key })
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
 	      break   
+		      
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 		 case '480vid' :
 	      try {
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
@@ -437,6 +461,7 @@ await conn.sendMessage(from, { delete: docsongup.key })
 		await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )      
 	      }      
 	      break  
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
 		      
 	      case 'yts' :
 		      try {
@@ -498,6 +523,8 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
 		      
 		      break
+  // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+		      
 	      case 'owner' :
 		const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
