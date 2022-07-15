@@ -21,8 +21,7 @@ const prefix = '.'
 const axios = require('axios');
 const { yt720 ,  yt480 ,  yt360 } = require('./lib/ytmp4');
 const ytmp3 = require('./lib/ytmp3');
-
-
+const apk_link = require('./lib/playstore');
 const yts = require( 'yt-search' )
 
 
@@ -84,6 +83,8 @@ mek = mek.messages[0]
       
       switch (command) {
       
+		    // alive //  
+		      
       case 'alive':
          try {
 		await conn.sendMessage(from , { audio : fs.readFileSync("./src/alive.mpeg") , mimetype : 'audio/mpeg' , ptt: true  } , { quoted: mek })
@@ -106,9 +107,13 @@ mek = mek.messages[0]
          } catch(e) { 
                       return 
          } 
-          
         break
-          
+		      
+		      
+ //_______________________________________________________________________________________________________________________________________________________   //      
+		    // sticker //  
+		      
+		      
         case 'sticker' :
         case 's' :
         case 'stic' :
@@ -135,7 +140,7 @@ mek = mek.messages[0]
 	       v.reply('reply to image or video')
         }
               break 
-         
+   // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //      
 	      case 'sticget' :
               case 'stickget' :
 		      try {
@@ -185,6 +190,11 @@ mek = mek.messages[0]
 	
 	}
               break
+		      
+		      
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		     // mediafire //
+		      
 	      case "mediafire" :
 	      case "mfire" : 
 		try {
@@ -204,6 +214,11 @@ mek = mek.messages[0]
 		}
 		      
 	      break
+		      
+		      
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		      // instagram //
+		      
 	      case "ig" :
 	      case "instagram" : 
 		try {
@@ -222,7 +237,11 @@ mek = mek.messages[0]
 			await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 		}
 		      
-	      break        
+	      break   
+		      
+//_______________________________________________________________________________________________________________________________________________________   //	      
+		      // tiktok //
+		      
 	      case "tik" :
 	      case "tiktok" : 
 		try {
@@ -242,6 +261,10 @@ mek = mek.messages[0]
 		}
 		      
 	      break
+		      
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		      // facebook //
+		      
 	      case 'fb' :
 	      case 'facebook' :
 	      try {
@@ -292,6 +315,10 @@ mek = mek.messages[0]
 			await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 		}
 		      break
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		      
+		      // youtube //
+		      
 	        case 'yt' :
 		case 'ytd' :
 		case 'song' :
@@ -429,6 +456,19 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 }  
 		      break
 		      
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		      
+		// playstore // 
+		      
+	      case "apk" :
+		      
+		      
+		      break
+		      
+		      
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+	// menu // 	      
+		      
 		case 'menu' :
 		case 'list' :      
 	        case 'panal' :
@@ -466,6 +506,8 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
             + 'END:VCARD'
  await conn.sendMessage(from,{ contacts: { displayName: 'noureddine_ouafy' , contacts: [{ vcard }]  }} , { quoted: mek })      
 		      break 
+ //_______________________________________________________________________________________________________________________________________________________   //		      
+		      
       }
 
 }catch(e) {
