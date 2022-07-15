@@ -562,15 +562,16 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 ╰────────────────────╯
 ╭────────────────────╮
 │  ⸙ .sticker           صناعة ملصقات
+│  ⸙ .apk             تحميل تطبيقات
 │  ⸙ .fb            التحميل من فيسبوك
 │  ⸙ .ig         التحميل من الانستغرام
 │  ⸙ .tiktok       التحميل من تيكتوك
-│  ⸙ .yts            البحث في اليوتوب
 │  ⸙ .yt              التحميل من يوتوب
+│  ⸙ .yts            البحث في اليوتوب
 │  ⸙ .mediafire        ميديافاير " "
 │  ⸙ .stickget          حقوق الملصق
 │  ⸙ .alive      هل البوت شغال ام لا
-│  
+│  ⸙ .song          تحميل الموسيقى 
 ╰────────────────────╯`
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
 		      
