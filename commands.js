@@ -536,7 +536,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
          await conn.sendMessage(from, { delete: filedown.key })
 		}
 		      catch(e) {
-await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )  
+await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )  
 } 
 		      
 	      break      
