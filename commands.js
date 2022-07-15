@@ -447,7 +447,7 @@ await conn.sendMessage(from, { delete: docsongup.key })
 		      
 		 case '480vid' :
 	      try {
-	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
+	     if(!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
 	     
              if ( !q.includes('youtu') ) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )  
 	   let docsong = await yt480(q)
@@ -465,11 +465,11 @@ await conn.sendMessage(from, { delete: docsongup.key })
 		      
 	      case 'yts' :
 		      try {
-		      if (!q) return await conn.sendMessage(from , { text: Lang.N_YT }, { quoted: mek } )
+		      if (!q) return await conn.sendMessage(from , { text: 'need title'  }, { quoted: mek } )
 		try {
 var arama = await yts(q);
 } catch(e) {
-return await conn.sendMessage(from , { text: Lang.NOT_VID }, { quoted: mek } )
+return await conn.sendMessage(from , { text: 'not found' }, { quoted: mek } )
 }
 var mesaj = '';
 arama.all.map((video) => {
@@ -487,6 +487,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 		      
 	      case "apk" :
 		     try {
+			 if (!q) return await conn.sendMessage(from , { text: 'need app name' }, { quoted: mek } )        
 		     const data2 = await axios.get('https://api-bobiz.herokuapp.com/api/playstore?q=' + q)
 		     const data = data2.data
 		     if (data.length < 1) return await  conn.sendMessage(from, { text: e2Lang.N_FOUND }, { quoted: mek } )
@@ -515,7 +516,30 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 } 
 		      
 	 break
+// _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //   		      
+	
+	      case 'dapk' :   
+		try {
+	   if(!q) return await conn.sendMessage(from , { text: 'need app link' }, { quoted: mek } )    
+	  const data = await axios.get('https://api-bobiz.herokuapp.com/api/apk?url=' + q)
+	 const name = data.data.name		
+	   const fileup = await conn.sendMessage(from , { text: config.FILE_DOWN }, { quoted: mek } )
+	   await conn.sendMessage(from, { delete: fileup.key })
+           const filedown = await conn.sendMessage(from , { text: config.FILE_UP }, { quoted: mek } )
+	 	 const app_link = await apk_link(q)
+	  if ( app_link.size.replace('MB' , '') > 200) return await conn.sendMessage(from , { text: 'to large' }, { quoted: mek } )
+         if ( app_link.size.includes('GB')) return await conn.sendMessage(from , { text: 'too large' }, { quoted: mek } )
+		  var ext = ''
+		  if (app_link.type.includes('Download XAPK')) { ext = '.xapk' } 
+		  else { ext = '.apk' }
+         await conn.sendMessage(from , { document : { url : app_link.dl_link  } , mimetype : 'application/vnd.android.package-archive' , fileName : name + ext } , { quoted: mek })
+         await conn.sendMessage(from, { delete: filedown.key })
+		}
+		      catch(e) {
+await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )  
+} 
 		      
+	      break      
 		      
  //_______________________________________________________________________________________________________________________________________________________   //		      
 	// menu // 	      
