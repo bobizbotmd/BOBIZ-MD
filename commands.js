@@ -496,7 +496,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
       srh.push({
           title: data[i].title,
           description: '',
-          rowId: prefix + 'dapk ' + 'https://play.google.com/store/games' + data[i].link
+          rowId: prefix + 'dapk ' + 'https://play.google.com' + data[i].link
       });
   }
     const sections = [{
