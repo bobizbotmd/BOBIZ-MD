@@ -520,13 +520,14 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 	
 	      case 'dapk' :   
 		try {
-	   if(!q) return await conn.sendMessage(from , { text: 'need app link' }, { quoted: mek } )    
-	  const data = await axios.get('https://api-bobiz.herokuapp.com/api/apk?url=' + q)
+	   if(!q) return await conn.sendMessage(from , { text: 'need app link' }, { quoted: mek } ) 
+			 const n = q.replace('/store/apps/details?id=', '')
+	  const data = await axios.get('https://api-bobiz.herokuapp.com/api/apk?url=https://play.google.com/store/apps/details?id=' + n)
 	 const name = data.data.name		
 	   const fileup = await conn.sendMessage(from , { text: config.FILE_DOWN }, { quoted: mek } )
 	   await conn.sendMessage(from, { delete: fileup.key })
            const filedown = await conn.sendMessage(from , { text: config.FILE_UP }, { quoted: mek } )
-	   const n = q.replace('/store/apps/details?id=', '')
+	  
 	 	 const app_link = await apk_link(n)
 	  if ( app_link.size.replace('MB' , '') > 200) return await conn.sendMessage(from , { text: 'to large' }, { quoted: mek } )
          if ( app_link.size.includes('GB')) return await conn.sendMessage(from , { text: 'too large' }, { quoted: mek } )
