@@ -486,9 +486,35 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 		// playstore // 
 		      
 	      case "apk" :
+		     try {
+		     const data2 = await axios.get('https://api-bobiz.herokuapp.com/api/playstore?q=' + q)
+		     const data = data2.data
+		     if (data.length < 1) return await  conn.sendMessage(from, { text: e2Lang.N_FOUND }, { quoted: mek } )
+	  var srh = [];  
+		   for (var i = 0; i < data.length; i++) {
+      srh.push({
+          title: data[i].title,
+          description: '',
+          rowId: prefix + 'dapk ' + 'https://play.google.com/store/games' + data[i].link
+      });
+  }
+    const sections = [{
+      title: "Playstore Search Results",
+      rows: srh
+  }]
+    const listMessage = {
+      text: " \n\n name : " + q + '\n\n ',
+      footer: config.FOOTER,
+      title: '🐶BOBIZ BOT🐕 APK DOWNLOADER',
+      buttonText: "Results",
+      sections
+  }
+    await conn.sendMessage(from, listMessage, {quoted: mek })
+		      } catch(e) {
+await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )  
+} 
 		      
-		      
-		      break
+	 break
 		      
 		      
  //_______________________________________________________________________________________________________________________________________________________   //		      
