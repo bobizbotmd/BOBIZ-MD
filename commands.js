@@ -500,14 +500,14 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
       });
   }
     const sections = [{
-      title: "Playstore Search Results",
+      title: "البحث في بلاي ستور",
       rows: srh
   }]
     const listMessage = {
       text: " \n\n name : " + q + '\n\n ',
       footer: config.FOOTER,
-      title: '🐶BOBIZ BOT🐕 APK DOWNLOADER',
-      buttonText: "Results",
+      title: '🐶BOBIZ BOT🐕 تحميل التطبيقات',
+      buttonText: "نتائج البحث اضغط هنا",
       sections
   }
     await conn.sendMessage(from, listMessage, {quoted: mek })
@@ -582,7 +582,7 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 		const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + `FN:` + 'noureddine_ouafy' + `\n` // full name
-            + 'TEL;type=CELL;type=VOICE;waid=' + '212774421209' + ':+' + '212774421209' + '\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=' + '212605784394' + ':+' + '212605784394' + '\n' // WhatsApp ID + phone number
             + 'END:VCARD'
  await conn.sendMessage(from,{ contacts: { displayName: 'noureddine_ouafy' , contacts: [{ vcard }]  }} , { quoted: mek })      
 		      break 
