@@ -122,7 +122,7 @@ mek = mek.messages[0]
 	        const isQuotedImage = v.quoted ? ((v.quoted.type === 'imageMessage') || (isQuotedViewOnce ? (v.quoted.msg.type === 'imageMessage') : false)) : false
 	        const isQuotedVideo = v.quoted ? ((v.quoted.type === 'videoMessage') || (isQuotedViewOnce ? (v.quoted.msg.type === 'videoMessage') : false)) : false
           if ((v.type === 'imageMessage') || isQuotedImage) { 
-          const cstic = await conn.sendMessage(from , { text: 'creating' }, { quoted: mek } )
+          const cstic = await conn.sendMessage(from , { text: 'creating جاري صناعة الملصق' }, { quoted: mek } )
           var nameJpg = getRandom('')
 	        isQuotedImage ? await v.quoted.download(nameJpg) : await v.download(nameJpg)
 	        var stik = await imageToWebp(nameJpg + '.jpg')
