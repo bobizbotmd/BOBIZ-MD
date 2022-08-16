@@ -198,11 +198,11 @@ mek = mek.messages[0]
 	      case "mediafire" :
 	      case "mfire" : 
 		try {
-		if (!q) return await conn.sendMessage(from , { text: 'need mediafire link' }, { quoted: mek } )
+		if (!q) return await conn.sendMessage(from , { text: 'أين هو رابط الميديافاير الدي تود تحميله يا عزيزي' }, { quoted: mek } )
 		if (!q.includes('mediafire.com/file')) return await conn.sendMessage(from , { text: 'need mediafire link' }, { quoted: mek } )
 		const data = await axios.get('https://api-bobiz.herokuapp.com/api/mfire?url=' + q)
 		const file = data.data
-  if ( file.filesize > 750000) return await conn.sendMessage(from , { text: mx }, { quoted: mek } )
+  if ( file.filesize > 150000) return await conn.sendMessage(from , { text: mx }, { quoted: mek } )
   const fileup = await conn.sendMessage(from , { text: config.FILE_DOWN }, { quoted: mek } )
   await conn.sendMessage(from, { delete: fileup.key })
   const filedown = await conn.sendMessage(from , { text: config.FILE_UP }, { quoted: mek } )
