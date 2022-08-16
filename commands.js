@@ -572,13 +572,8 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 │  ⸙ .stickget          حقوق الملصق
 │  ⸙ .alive      هل البوت شغال ام لا
 │  ⸙ .song          تحميل الموسيقى 
-╰────────────────────╯`
-     ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ 
- ❀ *instagram* :
- https://instagram.com/noureddine_ouafy
- ❀ *youtube* : 
-https://youtube.com/NoureddineOuafy
- ❀ *facebook* : https://www.facebook.com/profile.php?id=100063533185520
+╰────────────────────╯
+     ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ`
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
 		      
 		      break
