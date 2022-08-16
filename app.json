@@ -68,12 +68,12 @@
       },
           "FILE_DOWN": {
             "description": "file downloading text",
-            "value": "*📥Downloading your file...*" ,
+            "value": "*📥جاري تحميل الملف...*" ,
             "required": true
       },
           "FILE_UP": {
             "description": "file uploading text",
-            "value": "*📤Uploading your file...*" ,
+            "value": "*📤جاري ارسال الملف ...*" ,
             "required": true
       },
           "STIC_WM": {
