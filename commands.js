@@ -573,7 +573,8 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 │  ⸙ .alive      هل البوت شغال ام لا
 │  ⸙ .song          تحميل الموسيقى 
 ╰────────────────────╯
-     ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ`
+     ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ
+     تابعني على الانستغرام : instagram.com/noureddine_ouafy`
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
 		      
 		      break
