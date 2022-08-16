@@ -573,15 +573,11 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 │  ⸙ .alive      هل البوت شغال ام لا
 │  ⸙ .song          تحميل الموسيقى 
 ╰────────────────────╯
-▲━━━━━━━━━━━━━━━━━━▼
-        ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ 
+     ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ 
  ❀ *instagram* :
  https://instagram.com/noureddine_ouafy
- 
  ❀ *youtube* : 
-
 https://youtube.com/NoureddineOuafy
-
  ❀ *facebook* : https://www.facebook.com/profile.php?id=100063533185520`
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
 		      
