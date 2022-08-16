@@ -574,22 +574,13 @@ await conn.sendMessage(from , { text: 'error\n\n' + e }, { quoted: mek } )
 │  ⸙ .song          تحميل الموسيقى 
 ╰────────────────────╯
 ▲━━━━━━━━━━━━━━━━━━▼
-
-    ʜᴇʟʟᴏ ᴍʏ ɴᴀᴍᴇ ɪs ʙᴏʙɪᴢ ʙᴏᴛ
-
-  مرحبا إسمي بوبيز بوت أول بوت مغربي 
-
-▲━━━━━━━━━━━━━━━━━━▼
-
         ʙʏ ɴᴏᴜʀᴇᴅᴅɪɴᴇ ᴏᴜᴀғʏ 
-
  ❀ *instagram* :
-
- instagram.com/noureddine_ouafy
-
+ https://instagram.com/noureddine_ouafy
+ 
  ❀ *youtube* : 
 
-youtube.com/NoureddineOuafy
+https://youtube.com/NoureddineOuafy
 
  ❀ *facebook* : https://www.facebook.com/profile.php?id=100063533185520`
 		      await conn.sendMessage(from , { text: msg }, { quoted: mek } )  
