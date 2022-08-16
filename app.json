@@ -16,7 +16,7 @@
            
            "URL_1NAME": {
             "description": "",
-            "value": "🎃Follow me on Instagram🎃" ,
+            "value": "🎃تـابعني على الانستغرام🎃" ,
             "required": true
       },
            "URL_1LINK": {
@@ -26,7 +26,7 @@
       },
      "URL_2NAME": {
             "description": "",
-            "value": "✨Star on Github✨" ,
+            "value": "✨Star on Github سكريبت البوت✨" ,
             "required": true
       },
        "URL_2LINK": {
@@ -37,7 +37,7 @@
       
       "ALIVE_MESSAGE": {
             "description": "add text",
-            "value": "default", 
+            "value": "defaul", 
             "required": true
       },
       "ALIVE_LOGO": {
@@ -48,22 +48,22 @@
      
        "SONG_DOWN": {
             "description": "song downloading text",
-            "value": "*📥Downloading your song...*" ,
+            "value": "*📥جاري تحميل الأغنية...*" ,
             "required": true
       }, 
         "SONG_UP": {
             "description": "song uploading text",
-            "value": "*📤Uploading your song...*" ,
+            "value": "*📤جاري ارسال الأغنية او الموسيقى...*" ,
             "required": true
       },
           "VIDEO_DOWN": {
             "description": "video downloading text",
-            "value": "*📥Downloading your video...*" ,
+            "value": "*📥جاري تحميل الفيديو...*" ,
             "required": true
       },
           "VIDEO_UP": {
             "description": "video uploading text",
-            "value": "*📤Uploading your video...*" ,
+            "value": "*📤جاري ارسال الفيديو...*" ,
             "required": true
       },
           "FILE_DOWN": {
@@ -77,7 +77,7 @@
             "required": true
       },
           "STIC_WM": {
-            "description": "sticker watermark",
+            "description": "حقوق الملصق",
             "value": "BOBIZ-MD" ,
             "required": true
       }
