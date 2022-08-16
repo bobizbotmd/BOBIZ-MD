@@ -40,7 +40,7 @@ async function ytinfo(name) {
         let views = arama[0].views;
         let author = arama[0].author.name;
         let url = arama[0].url
-        let result = { msg : '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠  *📥YT DOWNLOADER📤*  ╣\n╚═════════════╝\n\n║📽️ɴᴀᴍᴇ: ' + title2 + '\n\n║👁️ᴠɪᴇᴡs: ' + views + '\n\n║📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║🖇️ᴜʀʟ: ' + url + '\n\n╚═══════════◈' , 
+        let result = { msg : '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠  *📥YT DOWNLOADER تحميل الفيديوات من اليوتوب📤*  ╣\n╚═════════════╝\n\n║📽️ɴᴀᴍᴇ: ' + title2 + '\n\n║👁️ᴠɪᴇᴡs: ' + views + '\n\n║📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║🖇️ᴜʀʟ: ' + url + '\n\n╚═══════════◈' , 
                       thumbnail : thumbnail ,
                       yuturl: url }
         return result
@@ -89,7 +89,7 @@ mek = mek.messages[0]
          try {
 		await conn.sendMessage(from , { audio : fs.readFileSync("./src/alive.mpeg") , mimetype : 'audio/mpeg' , ptt: true  } , { quoted: mek })
               var alivemsg = ''
-              if (config.ALIVEMSG == 'default') alivemsg = '```👋 Hi! I am online now.```'
+              if (config.ALIVEMSG == 'default') alivemsg = '```👋 Hi! I am online now. مرحبا أنا متصل الان في خدمتك سيدي😉```'
               if ( config.ALIVEMSG !== 'default') alivemsg = config.ALIVEMSG
               const templateButtons = [
               { urlButton: {displayText: config.URL_1NAME , url: config.URL_1LINK }},
@@ -222,7 +222,7 @@ mek = mek.messages[0]
 	      case "ig" :
 	      case "instagram" : 
 		try {
-		if (!q) return await conn.sendMessage(from , { text: 'need instagram link' }, { quoted: mek } )
+		if (!q) return await conn.sendMessage(from , { text: 'أين هو رابط فيديو انستغرام الدي تود تحميله عزيزي ' }, { quoted: mek } )
 		if (!q.includes('instagram.com')) return await conn.sendMessage(from , { text: 'need instagram link' }, { quoted: mek } )
 		const data = await axios.get('https://api-bobiz.herokuapp.com/api/ig?url=' + q)
 		const file = data.data[0]
