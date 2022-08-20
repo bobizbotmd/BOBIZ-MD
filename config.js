@@ -16,7 +16,7 @@ module.exports = {
     URL_1LINK: process.env.URL_1LINK === undefined ? 'http://instagram.com/noureddine_ouafy' : process.env.URL_1LINK,
     URL_2NAME: process.env.URL_2NAME === undefined ? '✨Star on Github✨' : process.env.URL_2NAME,
     URL_2LINK: process.env.URL_2LINK === undefined ? 'https://github.com/sanuwaofficial' : process.env.URL_2LINK,
-    FOOTER: process.env.FOOTER === undefined ? '𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃 𝙼𝙳' : process.env.FOOTER,
+    FOOTER: process.env.FOOTER === undefined ? 'BOBIZBOT-MD  instagram.com/noureddine_ouafy تابعني على الانستغرام ' : process.env.FOOTER,
     CAPTION: process.env.CAPTION === undefined ? '🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃 𝙼𝙳🐕' : process.env.CAPTION,
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/201b5c02be1e336a29c60.jpg' : process.env.ALIVE_LOGO,
