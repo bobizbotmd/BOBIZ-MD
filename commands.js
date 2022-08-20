@@ -137,7 +137,7 @@ mek = mek.messages[0]
 		     .then(x => v.replyS(x))
          await conn.sendMessage(from, { delete: cstic.key })
          } else {
-	       v.reply('reply to image or video')
+	       v.reply('أين هي الصورة او الفيديو الذي تود ان تحوله للملصق يا عزيزي')
         }
               break 
    // _ _ _ _ _ _ _ _ __  _ _ _ _ _ _  __  _ _ _ __ _  __ _  _ _ _ _ __ _ _  __  __ _  _ __  _ __ _ _ _  _ __ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __  __ _  __ _ _ _ _   //      
