@@ -1,8 +1,8 @@
 {
-    "name": "BOBIZ - MD",
-    "description": "BOBIZMD  - Makes it easy and fun to use Whatsapp.",
-    "logo": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg",
-    "keywords": ["whatsapp", "userbot", "bobiz", "bot", "ai" , "MD" ],
+    "name": "RAIZEL - MD",
+    "description": "RSIZELMD  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://telegra.ph/file/39272916fd98efa5fec86.jpg",
+    "keywords": ["whatsapp", "userbot", "RAIZEL", "bot", "ai" , "MD" ],
     "repository": "https://github.com/bobizbotmd/BOBIZ-MD",
     "website":   "",
     "success_url": "",
@@ -16,22 +16,22 @@
            
            "URL_1NAME": {
             "description": "",
-            "value": "🎃تـابعني على الانستغرام🎃" ,
+            "value": "🎃 شاتي 🎃" ,
             "required": true
       },
            "URL_1LINK": {
             "description": "",
-            "value": "http://instagram.com/noureddine_ouafy" ,
+            "value": "https://wa.me/+967770500831 " ,
             "required": true
       },
      "URL_2NAME": {
             "description": "",
-            "value": "✨Star on Github سكريبت البوت✨" ,
+            "value": "✨قروبي✨" ,
             "required": true
       },
        "URL_2LINK": {
             "description": "",
-            "value": "https://github.com/bobizbotmd/BOBIZ-MD" ,
+            "value": "https://chat.whatsapp.com/F3BY5pbKsXF7iFq3Sm1V2n" ,
             "required": true
       },
       
@@ -78,7 +78,7 @@
       },
           "STIC_WM": {
             "description": "حقوق الملصق",
-            "value": "BOBIZ-MD" ,
+            "value": "𝐁𝐎𝐓_𝐃𝐀𝐄𝐌𝐎𝐍_𝐑𝐀𝐈𝐙𝐄𝐋" ,
             "required": true
       }
          
