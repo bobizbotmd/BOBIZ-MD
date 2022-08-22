@@ -41,8 +41,14 @@ global.APIKeys = {
 
 
 
-//customize settings\\
+//تخصيص الاعدادات\\
+fs.unwatchFile(file)
 
+console.log(chalk.redBright(`Update'${__filename}'`))
+
+delete require.cache[file]
+
+require(file)
 global.owner = ['Your 967771550103']
 
 global.premium = ['Your 967771550103']
