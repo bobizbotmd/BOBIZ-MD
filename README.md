@@ -25,7 +25,7 @@ const chalk = require('chalk')
 
 global.APIs = {
 
-	zenz: 'https://zenzapis.xyz',
+	zenz: 'https://badbotz.jpg',
 
 }
 
@@ -55,11 +55,11 @@ global.botname = 'Gojo-Satoru'
 
 global.footer = '©NexusNwInc.'
 
-global.ig = 'https://github.com/nexusNw'
+global.ig = 'https://youtu.be/WZ-ln1n4-WQ'
 
 global.region = 'India, South India, Kerala'
 
-global.sc = 'https://github.com/nexusNw/Gojo-Satoru'
+global.sc = 'https://youtu.be/WZ-ln1n4-WQ'
 
 global.myweb = 'https://youtu.be/WZ-ln1n4-WQ'
 
@@ -125,13 +125,13 @@ global.mess = {
 
 global.thumb = fs.readFileSync('./GojoMedia/gojo.jpg')
 
-global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.flaming = 'https://youtu.be/WZ-ln1n4-WQ'
 
-global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.fluming = 'https://youtu.be/WZ-ln1n4-WQ'
 
-global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.flarun = 'https://youtu.be/WZ-ln1n4-WQ'
 
-global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.flasmurf = 'https://youtu.be/WZ-ln1n4-WQ'
 
 let file = require.resolve(__filename)
 
@@ -148,4 +148,4 @@ fs.watchFile(file, () => {
 })iec/whatsasena)](https://replit.com/@bobizbotmd/BOBIZ-MD?v=1)
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bobizbotmd/BOBIZ-MD)
+[![Deploy](https://youtu.be/WZ-ln1n4-WQ)
