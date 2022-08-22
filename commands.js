@@ -40,7 +40,7 @@ async function ytinfo(name) {
         let views = arama[0].views;
         let author = arama[0].author.name;
         let url = arama[0].url
-        let result = { msg : '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠  *📥YT DOWNLOADER تحميل الفيديوات من اليوتوب📤*  ╣\n╚═════════════╝\n\n║📽️ɴᴀᴍᴇ: ' + title2 + '\n\n║👁️ᴠɪᴇᴡs: ' + views + '\n\n║📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║🖇️ᴜʀʟ: ' + url + '\n\n╚═══════════◈' , 
+        let result = { msg : '╔══[علي،الواقدي]══╗\n╠  *📥YT DOWNLOADER تحميل الفيديوات من اليوتوب📤*  ╣\n╚═════════════╝\n\n║📽️ɴᴀᴍᴇ: ' + title2 + '\n\n║👁️ᴠɪᴇᴡs: ' + views + '\n\n║📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║🖇️ᴜʀʟ: ' + url + '\n\n╚═══════════◈' , 
                       thumbnail : thumbnail ,
                       yuturl: url }
         return result
@@ -89,7 +89,7 @@ mek = mek.messages[0]
          try {
 		await conn.sendMessage(from , { audio : fs.readFileSync("./src/alive.mpeg") , mimetype : 'audio/mpeg' , ptt: true  } , { quoted: mek })
               var alivemsg = ''
-              if (config.ALIVEMSG == 'default') alivemsg = '```👋 Hi! I am online now. مرحبا أنا متصل الان في خدمتك سيدي😉```'
+              if (config.ALIVEMSG == 'default') alivemsg = '``` مرحبا! I am online now. مرحبا أنا متصل الان في خدمتك سيدي😉```'
               if ( config.ALIVEMSG !== 'default') alivemsg = config.ALIVEMSG
               const templateButtons = [
               { urlButton: {displayText: config.URL_1NAME , url: config.URL_1LINK }},
@@ -272,7 +272,7 @@ mek = mek.messages[0]
 	     if (!q) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )      
 	     const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
              if (!isfb) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )  
-		const msg = '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠  *📥FB DOWNLOADER📤*  ╣\n╚═════════════╝\n\n║ select video quality\n\n╚═════════════◈'
+		const msg = '╔══[🐶علي،الواقدي🐕]══╗\n╠  *📥FB DOWNLOADER📤*  ╣\n╚═════════════╝\n\n║ select video quality\n\n╚═════════════◈'
       const buttons = [
 {buttonId: prefix +'sdfb ' + q, buttonText: {displayText: 'SD '}, type: 1},
 {buttonId: prefix +'hdfb ' + q, buttonText: {displayText: 'HD '}, type: 1},
@@ -351,7 +351,7 @@ mek = mek.messages[0]
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
 	     
              if ( !q.includes('youtu') ) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )  
-		const msg = '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠   📥YOUTUBE MP3 DL📤 ║\n╚═════════════╝\n\n║ select mp3 type \n\n╚═════════════◈'
+		const msg = '╔══[🐶علي،الواقدي🐕]══╗\n╠   📥YOUTUBE MP3 DL📤 ║\n╚═════════════╝\n\n║ select mp3 type \n\n╚═════════════◈'
       const buttons = [
 {buttonId: prefix +'ausong ' + q, buttonText: {displayText: 'AUDIO'}, type: 1},
 {buttonId: prefix +'dcsong ' + q, buttonText: {displayText: 'DOCUMENT '}, type: 1},
@@ -370,7 +370,7 @@ mek = mek.messages[0]
 	     if (!q) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )      
 	     
              if ( !q.includes('youtu') ) return await conn.sendMessage(from , { text: 'need yt link' }, { quoted: mek } )  
-		const msg = '╔══[🐶𝙱𝙾𝙱𝙸𝚉 𝙱𝙾𝚃🐕]══╗\n╠   📥YOUTUBE MP4 DL📤 ║\n╚═════════════╝\n\n║ select video quality\n\n╚═════════════◈'
+		const msg = '╔══[🐶علي،الواقدي🐕]══╗\n╠   📥YOUTUBE MP4 DL📤 ║\n╚═════════════╝\n\n║ select video quality\n\n╚═════════════◈'
       const buttons = [
 {buttonId: prefix +'720vid ' + q, buttonText: {displayText: '720P'}, type: 1},
 {buttonId: prefix +'480vid ' + q, buttonText: {displayText: '480P '}, type: 1},
@@ -507,7 +507,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
     const listMessage = {
       text: " \n\n name : " + q + '\n\n ',
       footer: config.FOOTER,
-      title: '🐶BOBIZ BOT🐕 تحميل التطبيقات',
+      title: '🐶،علي،الواقدي🐕 تحميل التطبيقات',
       buttonText: "نتائج البحث اضغط هنا",
       sections
   }
