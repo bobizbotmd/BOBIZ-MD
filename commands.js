@@ -533,8 +533,8 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
            const filedown = await conn.sendMessage(from , { text: config.FILE_UP }, { quoted: mek } )
 	  
 	 	 const app_link = await apk_link(n)
-	  if ( app_link.size.replace('MB' , '') > 200) return await conn.sendMessage(from , { text: 'to large' }, { quoted: mek } )
-         if ( app_link.size.includes('GB')) return await conn.sendMessage(from , { text: 'too large' }, { quoted: mek } )
+	  if ( app_link.size.replace('MB' , '') > 200) return await conn.sendMessage(from , { text: 'التطبيق الذي تريده حجمه كبير لا يمكن لبوبيز ان يرسله الحد الاقصى هو 200 ميغا' }, { quoted: mek } )
+         if ( app_link.size.includes('GB')) return await conn.sendMessage(from , { text: ' التطبيق الذي تريده حجمه كبير لا يمكن لبوبيز ان يرسله الحد الاقصى هو 200 ميغا' }, { quoted: mek } )
 		  var ext = ''
 		  if (app_link.type.includes('Download XAPK')) { ext = '.xapk' } 
 		  else { ext = '.apk' }
