@@ -52,5 +52,5 @@
      "moment-timezone": "^0.5.33",
     "node-fetch": "^2.6.1" ,
      "@hapi/boom" : "^10.0.0",
-    "megajs" : "^1.0.6"
+    "megajs" : "^1.0.4"
  }}
