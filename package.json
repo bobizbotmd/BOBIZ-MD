@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bobizbotmd",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.1.0",
+    "@adiwajshing/baileys": "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",  
     "axios": "^0.24.0",
     "heroku-client": "^3.1.0", 
@@ -51,5 +51,6 @@
      "path": "^0.12.7",
      "moment-timezone": "^0.5.33",
     "node-fetch": "^2.6.1" ,
-     "@hapi/boom" : "^10.0.0"
+     "@hapi/boom" : "^10.0.0",
+    "megajs" : "^1.0.6"
  }}
