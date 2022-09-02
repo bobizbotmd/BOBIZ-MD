@@ -1,8 +1,8 @@
 {
-    "name": "BOBIZ - MD",
-    "description": "BOBIZMD  - Makes it easy and fun to use Whatsapp.",
-    "logo": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg",
-    "keywords": ["whatsapp", "userbot", "bobiz", "bot", "ai" , "MD" ],
+    "name": "MZ BOT PRO - MD",
+    "description": "MZ BOT PRO  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://telegra.ph/file/368613138e71d1c8e4769.png",
+    "keywords": ["whatsapp", "userbot", "MZ BOT PRO", "bot", "ai" , "MD" ],
     "repository": "https://github.com/bobizbotmd/BOBIZ-MD",
     "website":   "",
     "success_url": "",
@@ -21,7 +21,7 @@
       },
            "URL_1LINK": {
             "description": "",
-            "value": "http://instagram.com/noureddine_ouafy" ,
+            "value": "http://instagram.com/mz_hacker1" ,
             "required": true
       },
      "URL_2NAME": {
@@ -78,7 +78,7 @@
       },
           "STIC_WM": {
             "description": "حقوق الملصق",
-            "value": "BOBIZ-MD" ,
+            "value": "MLaLi ZizWaR-MD" ,
             "required": true
       }
          
