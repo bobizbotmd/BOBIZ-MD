@@ -202,7 +202,7 @@ mek = mek.messages[0]
 		try {
 		if (!q) return await conn.sendMessage(from , { text: 'أين هو رابط الميديافاير الدي تود تحميله يا عزيزي' }, { quoted: mek } )
 		if (!q.includes('mediafire.com/file')) return await conn.sendMessage(from , { text: 'need mediafire link' }, { quoted: mek } )
-		const data = await axios.get('https://api-bobiz.herokuapp.com/api/mfire?url=' + q)
+		const data = await axios.get('https://bobiz-api.herokuapp.com/api/mfire?url=' + q)
 		const file = data.data
   if ( file.filesize > 150000) return await conn.sendMessage(from , { text: mx }, { quoted: mek } )
   const fileup = await conn.sendMessage(from , { text: config.FILE_DOWN }, { quoted: mek } )
@@ -227,7 +227,7 @@ mek = mek.messages[0]
 		try {
 		if (!q) return await conn.sendMessage(from , { text: 'أين هو رابط فيديو انستغرام الدي تود تحميله عزيزي ' }, { quoted: mek } )
 		if (!q.includes('instagram.com')) return await conn.sendMessage(from , { text: 'need instagram link' }, { quoted: mek } )
-		const data = await axios.get('https://api-bobiz.herokuapp.com/api/ig?url=' + q)
+		const data = await axios.get('https://bobiz-api.herokuapp.com/api/ig?url=' + q)
 		const file = data.data[0]
 
   const fileup = await conn.sendMessage(from , { text: config.VIDEO_DOWN }, { quoted: mek } )
@@ -250,7 +250,7 @@ mek = mek.messages[0]
 		try {
 		if (!q) return await conn.sendMessage(from , { text: 'need tiktok link' }, { quoted: mek } )
 		if (!q.includes('tiktok')) return await conn.sendMessage(from , { text: 'need tiktok link' }, { quoted: mek } )
-		const data = await axios.get('https://api-bobiz.herokuapp.com/api/tiktok?url=' + q)
+		const data = await axios.get('https://bobiz-api.herokuapp.com/api/tiktok?url=' + q)
 		const file = data.data
 
   const fileup = await conn.sendMessage(from , { text: config.VIDEO_DOWN }, { quoted: mek } )
@@ -291,7 +291,7 @@ mek = mek.messages[0]
 	      case 'hdfb' : 
 		      try {
 		if (!q) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )
-		const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
+		const data = await axios.get('https://bobiz-api.herokuapp.com/api/fb?url=' + q)
 		const file = data.data[0]
 
   const fileup = await conn.sendMessage(from , { text: config.VIDEO_DOWN }, { quoted: mek } )
@@ -310,7 +310,7 @@ mek = mek.messages[0]
 		        case 'sdfb' : 
 		      try {
 		if (!q) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )
-		const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
+		const data = await axios.get('https://bobiz-api.herokuapp.com/api/fb?url=' + q)
 		const file = data.data[1]
 
   const fileup = await conn.sendMessage(from , { text: config.VIDEO_DOWN }, { quoted: mek } )
@@ -492,7 +492,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 	      case "findapk":
 		     try {
 			 if (!q) return await conn.sendMessage(from , { text: 'اين هو اسم الاتطبيق الذي تريد تحميله' }, { quoted: mek } )        
-		     const data2 = await axios.get('https://api-bobiz.herokuapp.com/api/playstore?q=' + q)
+		     const data2 = await axios.get('https://bobiz-api.herokuapp.com/api/playstore?q=' + q)
 		     const data = data2.data
 		     if (data.length < 1) return await  conn.sendMessage(from, { text: e2Lang.N_FOUND }, { quoted: mek } )
 	  var srh = [];  
@@ -526,7 +526,7 @@ await conn.sendMessage(from , { text: 'error' }, { quoted: mek } )
 		try {
 	   if(!q) return await conn.sendMessage(from , { text: 'need app link' }, { quoted: mek } ) 
 			 const n = q.replace('/store/apps/details?id=', '')
-	  const data = await axios.get('https://api-bobiz.herokuapp.com/api/apk?url=https://play.google.com/store/apps/details?id=' + n)
+	  const data = await axios.get('https://bobiz-api.herokuapp.com/api/apk?url=https://play.google.com/store/apps/details?id=' + n)
 	 const name = data.data.name		
 	   const fileup = await conn.sendMessage(from , { text: config.FILE_DOWN }, { quoted: mek } )
 	   await conn.sendMessage(from, { delete: fileup.key })
