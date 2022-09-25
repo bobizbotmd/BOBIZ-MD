@@ -1,9 +1,9 @@
 {
     "name": "BOBIZ - MD",
     "description": "BOBIZMD  - Makes it easy and fun to use Whatsapp.",
-    "logo": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg",
+    "logo": "https://ibb.co/j68C7Qg",
     "keywords": ["whatsapp", "userbot", "bobiz", "bot", "ai" , "MD" ],
-    "repository": "https://github.com/bobizbotmd/BOBIZ-MD",
+    "repository": "https://wa.me/qr/YXBDFVJXUNAVP1",
     "website":   "",
     "success_url": "",
     "stack": "container",
@@ -16,22 +16,22 @@
            
            "URL_1NAME": {
             "description": "",
-            "value": "🎃تـابعني على الانستغرام🎃" ,
+            "value": "🦇المطور انوس 🦇" ,
             "required": true
       },
            "URL_1LINK": {
             "description": "",
-            "value": "http://instagram.com/noureddine_ouafy" ,
+            "value": "https://wa.me/qr/YXBDFVJXUNAVP1" ,
             "required": true
       },
      "URL_2NAME": {
             "description": "",
-            "value": "✨Star on Github سكريبت البوت✨" ,
+            "value": "🕸️قناتي على اليوتيوب 🕸️" ,
             "required": true
       },
        "URL_2LINK": {
             "description": "",
-            "value": "https://github.com/bobizbotmd/BOBIZ-MD" ,
+            "value": "https://youtube.com/channel/UCgLnk4h1FFfMjcKw5TtWJkw" ,
             "required": true
       },
       
@@ -42,7 +42,7 @@
       },
       "ALIVE_LOGO": {
             "description": "add direct image url",
-            "value": "https://telegra.ph/file/201b5c02be1e336a29c60.jpg" ,
+            "value": "https://telegra.ph/file/1592262447c5ce8714b60.jpg" ,
             "required": true
       },
      
@@ -78,7 +78,7 @@
       },
           "STIC_WM": {
             "description": "حقوق الملصق",
-            "value": "BOBIZ-MD" ,
+            "value": "الامبراطور انوس " ,
             "required": true
       }
          
